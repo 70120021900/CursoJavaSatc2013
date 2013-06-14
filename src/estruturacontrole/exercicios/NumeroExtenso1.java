@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 /**
  * Transforma uma entrada numérica entre 1-10 para palavras utilizando if-else
  */
-public class NumWords1 {
+public class NumeroExtenso1 {
 
     public static void main(String[] args) {
         String msg = "";

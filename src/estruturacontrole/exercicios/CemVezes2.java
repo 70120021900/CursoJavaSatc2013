@@ -9,7 +9,7 @@ import java.io.*;
 /**
  * Um programa que imprime 100 vezes um número digitado
  */
-public class HundredNames3 {
+public class CemVezes2 {
 
     public static void main(String[] args) {
         BufferedReader reader = new BufferedReader(
@@ -23,10 +23,11 @@ public class HundredNames3 {
             System.out.println("entrada inválida");
             System.exit(0);
         }
-
-// Declaração for para exibir 100 vezes o nome digitado
-        for (int counter = 0; counter < 100; counter++) {
+// Declaração do-while para exibir 100 vezes o nome digitado
+        int counter = 0;
+        do {
             System.out.println(name);
-        }
+            counter++;
+        } while (counter < 100);
     }
 }

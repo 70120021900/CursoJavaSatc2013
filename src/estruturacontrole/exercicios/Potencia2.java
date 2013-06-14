@@ -10,12 +10,12 @@ import javax.swing.JOptionPane;
  * Calcula a potência de um número dados a base e expoente. O expoente está
  * limitado a números positivos.
  */
-public class Powers3 {
+public class Potencia2 {
 
     public static void main(String[] args) {
         int base = 0;
         int exp = 0;
-        int power = 1;
+        int potencia = 1;
 
 // Obter entrada do usuário para base e expoente
         base = Integer.parseInt(JOptionPane.showInputDialog("Base"));
@@ -27,13 +27,14 @@ public class Powers3 {
             System.exit(0);
         }
 
-// Declaração for para calcular a potência
-        for (int counter = 0; counter < exp; counter++) {
-            power = power * base;
-        }
+// Declaração do-while para calcular a potência
+        int counter = 0;
+        do {
+            potencia = potencia * base;
+        } while (++counter < exp);
 
 // Mostrar o resultado
         JOptionPane.showMessageDialog(null,
-                base + " elevado a " + exp + " é igual a " + power);
+                base + " elevado a " + exp + " é igual a " + potencia);
     }
 }

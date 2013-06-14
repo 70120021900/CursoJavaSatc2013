@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
  * Um programa que utiliza JOptionPane para obter dez números do usuário e
  * exibir o maior número.
  */
-public class GreatestNumber {
+public class MaiorNumero1 {
 
     public static void main(String[] args) {
         int[] num = new int[10];

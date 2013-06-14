@@ -8,7 +8,7 @@ package estruturacontrole.exercicios;
 /**
  * Um programa que mostra os dados de um array multidimensional.
  */
-public class GreatestNumber2 {
+public class MaiorNumero2 {
 
     public static void main(String[] args) {
         String entry[][] = {
