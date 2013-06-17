@@ -21,7 +21,7 @@ public class MaiorNumero1 {
             num[counter] = Integer.parseInt(
                     JOptionPane.showInputDialog("Digite o número " + (counter + 1)));
 // Obter o número máximo
-            if ((counter == 0) || (num[counter] > max)) {
+            if (num[counter] > max) {
                 max = num[counter];
             }
         }

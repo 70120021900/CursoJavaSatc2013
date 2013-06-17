@@ -25,7 +25,7 @@ public class CemVezes3 {
         }
 
 // Declaração for para exibir 100 vezes o nome digitado
-        for (int counter = 0; counter < 100; counter++) {
+        for (int counter = 100; counter < 100; counter++) {
             System.out.println(name);
         }
     }
