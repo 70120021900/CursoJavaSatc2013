@@ -20,6 +20,7 @@ public class Funcionario {
     
     String rg;
     
+    
     void recebeAumento(Double valor){
         salario += valor; 
     }
