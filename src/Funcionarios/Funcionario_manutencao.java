@@ -10,28 +10,30 @@ package Funcionarios;
  */
 public class Funcionario_manutencao {
         public static void main(String[] args) {
-        Funcionario funcionario = new Funcionario();
+        Funcionario funcionario1 = new Funcionario();
+        Funcionario funcionario2 = new Funcionario();
         
-        funcionario.nome = "Claudemir";
-        funcionario.cpf = "701.701.701-00";
-        funcionario.rg = "2.741.999";
-        funcionario.admissao = "14/11/2008";
-        funcionario.departamento = "Recursos Humanos";
-        funcionario.sexo = "F";
-        funcionario.situacao = "Ativo";
-        funcionario.salario = 1000.0;       
+        funcionario1.nome = "Claudemir";
+        funcionario1.cpf = "701.701.701-00";
+        funcionario1.rg = "2.741.999";
+        funcionario1.admissao = "14/11/2008";
+        funcionario1.departamento = "Recursos Humanos";
+        funcionario1.sexo = "M";
+        funcionario1.situacao = "Ativo";
+        funcionario1.salario = 1000.0;       
         double aumento = 100.0;
-        funcionario.recebeAumento(aumento);
-        funcionario.calculaGanhoAnual(100.0);
+        funcionario1.recebeAumento(aumento);
+        funcionario1.nome = "Lucas";
+        funcionario1.cpf = "722.701.701-00";
+        funcionario1.rg = "2.555.999";
+        funcionario1.admissao = "14/12/2010";
+        funcionario1.departamento = "Teste drive brasil";
+        funcionario1.sexo = "M";
+        funcionario1.situacao = "Ativo";
+        funcionario1.salario = 2000.0;       
+        funcionario1.recebeAumento(aumento);      
         
-        System.out.println(funcionario.nome);
-        System.out.println(funcionario.cpf);
-        System.out.println(funcionario.rg);
-        System.out.println(funcionario.admissao);
-        System.out.println(funcionario.departamento);
-        System.out.println(funcionario.sexo);
-        System.out.println(funcionario.situacao);        
-        System.out.println("Salario Atual: "+funcionario.salario);        
-        System.out.println("Ganho anual: "+funcionario.calculaGanhoAnual());
+        funcionario1.mostra();                
     }
+        
 }
