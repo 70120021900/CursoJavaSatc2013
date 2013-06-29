@@ -9,16 +9,16 @@ package classesobjetos.exercicios.funcionario;
  * @author Klaus Boeing
  */
 public class TestaFuncionario {
-
     public static void main(String[] args) {
-        Funcionario carlos = new Funcionario();
-        
-        carlos.nome = "Carlos";
-        carlos.salario = 1000.0;
-        carlos.rg = "22339992-0";
-        
-        Departamento departamento = new Departamento();
-        
+        Empresa emp = new Empresa();        
+        Funcionario[] func = new Funcionario[10];
+        funcionario.funcionario = func;
+        Funcionario funcionario = new Funcionario();
+        empresa.adicionaFuncionariosNaEmpresa(funcionario);
+        System.out.println("Nome do funcionário solicitado: " + empresa.imprimiEmpresaComFuncionarios(funcionario));
+    }
+}
+         
         departamento.nome = "A";
         departamento.percentualInsalubridade = 10.0;
         departamento.valorBonus = 100.0;
@@ -42,4 +42,15 @@ public class TestaFuncionario {
         carlos.mostra();
     }
     
+}
+
+class TestaEmpresa {
+    public static void main(String[] args) {
+        Empresa emp = new Empresa();
+        Funcionario[] func = new Funcionario[10];
+        emp.funcionarios = func;
+        Funcionario funcionario = new Funcionario();
+        emp.adicionaFuncionariosNaEmpresa(funcionario);
+        System.out.println("Nome do funcionário solicitado: " + emp.imprimiEmpresaComFuncionarios(funcionario));
+    }
 }
